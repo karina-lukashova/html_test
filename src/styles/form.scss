@@ -1,0 +1,95 @@
+input[type=range] {
+  appearance: none;
+  width: 100%;
+  background: transparent;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+
+input[type=range]:focus {
+  outline: none;
+}
+
+input[type=range]::-ms-track {
+  width: 100%;
+  cursor: pointer;
+  background: transparent; 
+  border-color: transparent;
+  color: transparent;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: 3px solid #286690;
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  background-color: #42A9ED;
+  cursor: pointer;
+  margin-top: -10px;
+  box-sizing: border-box;
+}
+
+/* All the same stuff for Firefox */
+input[type=range]::-moz-range-thumb {
+  border: 3px solid #286690;
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  background-color: #42A9ED;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+/* All the same stuff for IE */
+input[type=range]::-ms-thumb {
+  border: 3px solid #286690;
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  background-color: #42A9ED;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 8px;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.7);
+  border: 1px solid #FFFFFF;
+  border-radius: 6px;
+}
+
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 8px;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.7);
+  border: 1px solid #FFFFFF;
+  border-radius: 6px;
+}
+
+input[type=range]::-ms-track {
+  width: 100%;
+  height: 8px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  border-width: 16px 0;
+  color: transparent;
+}
+
+input[type=range]::-ms-fill-lower {
+  background-color: rgba(255, 255, 255, 0.7);
+  border: 1px solid #FFFFFF;
+  border-radius: 6px;
+}
+
+input[type=range]::-ms-fill-upper {
+  background-color: rgba(255, 255, 255, 0.7);
+  border: 1px solid #FFFFFF;
+  border-radius: 6px;
+}
