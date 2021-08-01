@@ -52,12 +52,16 @@ module.exports = {
           },
         ],
       },
+      {
+        test: /\.(woff|woff2)$/i,
+        type: 'asset/resource',
+      },
     ],
   },
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
-    assetModuleFilename: 'img/[hash][ext][query]',
+    assetModuleFilename: 'fonts/[name][ext][query]',
     clean: true,
   },
 };

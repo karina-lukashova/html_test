@@ -7,29 +7,32 @@
   <title>Тестовое задание</title>
 </head>
 <body>
-  <div class="main-container">
-    <header class="header">
+  <header class="header">
+    <div class="header__containter">
       <img class="header__logo" src="img/logo.png" alt="Логотип" width="247" height="22">
-      <nav class="header__navigation">
+      <button class="header__menu-btn" type="button">Меню</button>
+      <nav class="header__navigation header__navigation--hidden">
         <ul class="header__navigation-list">
           <li class="header__navigation-item">
             <a class="header__navigation-item-link header__navigation-item-link--active" href="#">Бизнес</a>
           </li>
           <li class="header__navigation-item">
-            <a class="header__navigation-item-link header__navigation-item-link--active" href="#">О&nbsp;нас</a>
+            <a class="header__navigation-item-link" href="#">О&nbsp;нас</a>
           </li>
           <li class="header__navigation-item">
-            <a class="header__navigation-item-link header__navigation-item-link--active" href="#">Цены</a>
+            <a class="header__navigation-item-link" href="#">Цены</a>
           </li>
           <li class="header__navigation-item">
-            <a class="header__navigation-item-link header__navigation-item-link--active" href="#">Оформить заказ</a>
+            <a class="header__navigation-item-link" href="#">Оформить заказ</a>
           </li>
         </ul>
       </nav>
-    </header>
-    <main>
-      <section class="info">
-        <h1 class="info__header">Lorem ipsum dolor sit amet consectetur adipiscing</h1>
+    </div>
+  </header>
+  <main>
+    <section class="info">
+      <div class="info__container">
+        <h1 class="info__header"><span class="info__header--blue">Lorem ipsum</span> dolor sit ametconsectetur <span class="info__header--blue">adipiscing</span></h1>
         <p class="info__text">At vero eos et accusamus et iusto odio dignissimos ducimus!</p>
         <ul class="info__list">
           <li class="info__item">Totam rem aperiam eaque ipsa</li>
@@ -37,32 +40,34 @@
           <li class="info__item">Sed ut perspiciatis, unde omnis iste natus error</li>
         </ul>
         <div class="info__buttons-wrapper">
-          <a href="#order" class="info__button info__button--order">Заказать</a>
-          <a href="#" class="info__button info__button--more">Подробнее</a>
+          <a class="info__button info__button--order" href="#order">Заказать</a>
+          <a class="info__button info__button--more" href="#">Подробнее</a>
         </div>
-      </section>
-      <section id="order" class="order">
-        <h2 class="order__title">Оформление заказа</h2>
+      </div>
+    </section>
+    <section class="order" id="order">
+      <div class="order__container">
+        <h2 class="order__title">Оформление <span class="order__title--blue">заказа</span></h2>
         <p class="order__text">Перед заполнением формы ознакомьтесь с&nbsp;нашей схемой работы!</p>
         <ol class="order__list">
           <li class="order__item">
-            <img class="order__item-image" src="" alt="" width="100" height="100">
-            <p class="order__item-text">Lorem ipsum dolor sit amet</p>
+            <img class="order__item-image" src="img/order__item-1.png" alt="Иконка лупы" width="100" height="100">
+            <p class="order__item-text">Lorem ipsum dolorsit amet</p>
           </li>
           <li class="order__item">
-            <img class="order__item-image" src="" alt="" width="100" height="100">
+            <img class="order__item-image" src="img/order__item-2.png" alt="Иконка процента" width="100" height="100">
             <p class="order__item-text">Сonsecteturadipiscing elit</p>
           </li>
           <li class="order__item">
-            <img class="order__item-image" src="" alt="" width="100" height="100">
+            <img class="order__item-image" src="img/order__item-3.png" alt="Иконка добавления документа" width="100" height="100">
             <p class="order__item-text">Sed do eiusmod tempor</p>
           </li>
           <li class="order__item">
-            <img class="order__item-image" src="" alt="" width="100" height="100">
-            <p class="order__item-text">Esse cillum dolore eu fugiat</p>
+            <img class="order__item-image" src="img/order__item-4.png" alt="Иконка сообщения" width="100" height="100">
+            <p class="order__item-text">Esse cillum doloreeu fugiat</p>
           </li>
           <li class="order__item">
-            <img class="order__item-image" src="" alt="" width="100" height="100">
+            <img class="order__item-image" src="img/order__item-5.png" alt="Иконка купюры" width="100" height="100">
             <p class="order__item-text">Excepteur sint occaecat cupidatat non proident</p>
           </li>
         </ol>
@@ -71,7 +76,7 @@
             <div class="form__type-wrapper">
               <input class="form__type-input" type="hidden" name="system-type">
               <div class="form__type-chooser">Выберите тип системы</div>
-              <ul class="form__type-list">
+              <ul class="form__type-list form__type-list--hidden">
                   <li class="form__type-item">Sed ut perspiciatis</li>
                   <li class="form__type-item">Nemo enim ipsam</li>
                   <li class="form__type-item">Et harum quidem</li>
@@ -100,37 +105,37 @@
             </div>
             <div class="form__file-wrapper">
               <input class="form__file-input visually-hidden" type="file" id="file-field" name="file">
-              <label class="form__file-label" for="file-field">Прикрепить файл</label>
+              <label class="form__file-label" for="file-field"><span>Прикрепить файл</span></label>
             </div>
           </div>
           <button type="submit" class="form__submit-btn">Отправить</button>
         </form>
-      </section>
-    </main>
-    <footer class="footer">
-      <p class="footer__copy">&copy;&nbsp;2018 &laquo;LoremIpsum.net&raquo; Все права защищены.</p>
-      <div class="footer__emoney-wrapper">
-        <ul class="footer__emoney-list">
-          <li class="footer__emoney-item">
-            <a href="https://qiwi.com/">Qiwi&nbsp;wallet</a>
-          </li>
-          <li class="footer__emoney-item">
-            <a href="https://yoomoney.ru/">Yandex&nbsp;Money</a>
-          </li>
-          <li class="footer__emoney-item">
-            <a href="https://www.webmoney.ru/">Web&nbsp;Money</a>
-          </li>
-        </ul>
-        <ul class="footer__contacts-list">
-          <li class="contacts-item">
-            <a href="mailto:info@ipsum228.com">info@ipsum228.com</a>
-          </li>
-          <li class="contacts-item">
-            <a href="https://vk.com/">Мы&nbsp;вконтакте</a>
-          </li>
-        </ul>
       </div>
-    </footer>
-  </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__container">
+      <p class="footer__copy">&copy;&nbsp;2018 &laquo;<span class="footer__copy--uppercase">LoremIpsum.net</span>&raquo; Все права защищены.</p>
+      <ul class="footer__emoney-list">
+        <li class="footer__emoney-item">
+          <a class="footer__emoney-link footer__emoney-link--qiwi" href="https://qiwi.com/">Qiwi&nbsp;wallet</a>
+        </li>
+        <li class="footer__emoney-item">
+          <a class="footer__emoney-link footer__emoney-link--ym" href="https://yoomoney.ru/">Yandex&nbsp;Money</a>
+        </li>
+        <li class="footer__emoney-item">
+          <a class="footer__emoney-link footer__emoney-link--wm" href="https://www.webmoney.ru/">Web&nbsp;Money</a>
+        </li>
+      </ul>
+      <ul class="footer__contacts-list">
+        <li class="footer__contacts-item">
+          <a class="footer__contacts-link footer__contacts-link--mail" href="mailto:info@ipsum228.com">info@ipsum228.com</a>
+        </li>
+        <li class="footer__contacts-item">
+          <a class="footer__contacts-link footer__contacts-link--vk" href="https://vk.com/">Мы&nbsp;вконтакте</a>
+        </li>
+      </ul>
+    </div>
+  </footer>
 </body>
 </html>
